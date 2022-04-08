@@ -10,8 +10,9 @@ body {
     display:flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 70%;
-    height: 50%;
+    justify-content: center;
+    
+    
 }
 
 .title > h1 {
@@ -21,6 +22,30 @@ body {
     font-size: 56px;
     font-weight: 700;
     margin: 28px;
+}
+
+
+
+.primeiro-aviso {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #75B79E;
+
+    align-items: baseline;
+    justify-content: center;
+    j
+}
+
+
+.content-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin:90px 0;
 }
 
 .parrot-img {
@@ -40,8 +65,17 @@ body {
     background-color: #A7E9AF;
 }
 
+.escondido {
+    display: none;
+}
+
 @media (max-width:600px){
     .content {
         flex-direction: column;
     }
+    .content-cards {
+        
+        flex-direction: column;
+    }
+
 }
