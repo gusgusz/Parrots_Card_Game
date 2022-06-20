@@ -1,39 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/reset.css">
-</head>
-<body>
-    <div class="title"><h1>PARROT CARD GAME</h1></div>
-    <div class="content">
-        <div class="primeiro-aviso"> 
-            <div class="content-parrot"> <img class="parrot-img"  src="imagens/front.png"> </div>
-            <h2>MODO DE JOGAR:</h2>
-            
-            <span>Escolha de 4 a 14 cartas,sendo apenas números pares</span>
-            <span>Quando o jogo começar, vire duas cartas!</span>
-            <span>Caso elas sejam iguais, você estará mais perto de ganhar!</span>
-            <span>Caso sejam diferentes,elas voltam ao estado inicial</span>              
-            <span>Quanto mais rápido conseguir achar todos os pares, melhor!</span>
-            <button onclick="darCartas()">JOGAR</button>
-            
-            
-
-
-        </div>
-        <div class = "content-cards">
-            <div class="content-parrot escondido"> <img class="parrot-img"  src="imagens/front.png"> </div>
-         </div>
-            
-        </div> 
-       
-        
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/favicon-96x96.png" />
+    <link rel="stylesheet" href="assets/styles/reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <title>Parrot Card Games</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">PARROT CARD GAME</h1>
+      <div class="relogio">00</div>
     </div>
-    <script src="scripts.js"></script>
-</body>
+
+    <ul class="tabuleiro"></ul>
+
+    <script src="./assets/scripts/scripts.js"></script>
+  </body>
 </html>
