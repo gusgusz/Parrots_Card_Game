@@ -1,39 +1,39 @@
 let qtdCartas;
 let cartasEscolha =[];
 
-let metal = [`<div class="content-parrot">
-<img class="parrot-img"  src="imagens/front.png"> 
-</div>`,`<div class="content-parrot">
+let metal = [`<div class="content-parrot metal" onClick="virar(this)">
+<img class="parrot-img"  src="imagens/front.png" > 
+</div>`,`<div class="content-parrot ">
 <img class="parrot-img"  src="imagens/metalparrot.gif"> 
 </div>`];
-let revertit = [`<div class="content-parrot">
+let revertit = [`<div class="content-parrot revertit" onClick="virar(this)">
 <img class="parrot-img"  src="imagens/front.png"> 
-</div>`,`<div class="content-parrot">
+</div>`,`<div class="content-parrot ">
 <img class="parrot-img"  src="imagens/revertitparrot.gif"> 
 </div>`];
-let triplets =[`<div class="content-parrot">
+let triplets =[`<div class="content-parrot triplets" onClick="virar(this)">
 <img class="parrot-img"  src="imagens/front.png"> 
-</div>`, `<div class="content-parrot">
+</div>`,`<div class="content-parrot ">
 <img class="parrot-img"  src="imagens/tripletsparrot.gif"> 
 </div>`];
-let unicorn = [`<div class="content-parrot">
+let unicorn = [`<div class="content-parrot unicorn" onClick="virar(this)">
 <img class="parrot-img"  src="imagens/front.png"> 
-</div>`,`<div class="content-parrot">
+</div>`,`<div class="content-parrot ">
 <img class="parrot-img"  src="imagens/unicornparrot.gif"> 
 </div>`];
-let fiesta = [`<div class="content-parrot">
+let fiesta = [`<div class="content-parrot fiesta" onClick="virar(this)" >
 <img class="parrot-img"  src="imagens/front.png"> 
-</div>`,`<div class="content-parrot">
+</div>`,`<div class="content-parrot ">
 <img class="parrot-img"  src="imagens/fiestaparrot.gif"> 
 </div>`];
-let bob =[`<div class="content-parrot">
+let bob =[`<div class="content-parrot bob" onClick="virar(this)" >
 <img class="parrot-img"  src="imagens/front.png"> 
-</div>`, `<div class="content-parrot">
+</div><`,`div class="content-parrot ">
 <img class="parrot-img"  src="imagens/bovrossparrot.gif"> 
 </div>`];
-let explody = [`<div class="content-parrot">
+let explody = [`<div class="content-parrot explody" onClick="virar(this)" >
 <img class="parrot-img"  src="imagens/front.png"> 
-</div>`,`<div class="content-parrot">
+</div>`,`<div class="content-parrot ">
 <img class="parrot-img"  src="imagens/explodyparrot.gif"> 
 </div>`];
 
@@ -79,13 +79,17 @@ function darCartas() {
         darCartas();
     }   
     
-    // for(let i=0;i<qtdCartas;i++){
+    
+}
 
-    //     let cartas = document.querySelector(".content .content-cards");
-    //     cartas.innerHTML += `
-    //      <div class="content-parrot">
-    //      <img class="parrot-img"  src="imagens/front.png"> 
-    //     </div>`;
-    // }
+function virar(el) {
+    //console.log(el);
+    let oi = el;
+   for(let b=0; b<cartasEscolha.length;b++){
+       if(cartasEscolha[b][0] == oi){
+           console.log("oi");
+       }  
+        
+   }
 }
 
